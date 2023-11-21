@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">logo</string>
+    <string name="profile">Profile</string>
+    <string name="information_account">Informasi akun</string>
+    <string name="name">Nama Lengkap</string>
+    <string name="phonenum">No. Telpon</string>
+    <string name="city">Kota</string>
+    <string name="ward">Kelurahan</string>
+    <string name="subdistrict">Kecamatan</string>
+    <string name="password">Kata Sandi</string>
 </resources>
