@@ -432,11 +432,11 @@
                 android:id="@+id/EditProfileButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/rounded_shape"
                 android:layout_marginStart="50dp"
                 android:layout_marginEnd="50dp"
                 android:layout_marginTop="50dp"
-                android:text="@string/confirmation"/>
+                android:text="@string/confirmation"
+                android:backgroundTint="@color/green"/>
 
         </LinearLayout>
 
