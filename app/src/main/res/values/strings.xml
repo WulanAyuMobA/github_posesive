@@ -8,4 +8,8 @@
     <string name="ward">Kelurahan</string>
     <string name="subdistrict">Kecamatan</string>
     <string name="password">Kata Sandi</string>
+    <string name="exit_account">Keluar akun</string>
+    <string name="edit_account">Edit Profile</string>
+    <string name="notification">Notifikasi</string>
+    <string name="confirmation">Konfirmasi</string>
 </resources>
