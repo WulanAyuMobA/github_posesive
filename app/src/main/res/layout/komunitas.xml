@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlkomunitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvkom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komunitas"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="15dp"
+
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Semua"
+        android:textColor="@color/darkyellow"
+        android:textSize="18dp"
+        android:layout_marginLeft="100dp"
+            android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/tvkom"
+        />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlkomunitas"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_kom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fotoimas"
+            />
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ratna"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/fotop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+            <TextView
+            android:id="@+id/tv_hari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 HariLalu"
+                android:layout_marginStart="150dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/tv_nama"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_isi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musim ini sangat cocok untuk menannam sayur kol sayabaru mendaptkan hasil panen sayur kol yang lumayan"
+                android:textColor="@color/green"
+                android:textAlignment="inherit"
+                android:textSize="16sp"
+                android:layout_below="@id/fotop"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
