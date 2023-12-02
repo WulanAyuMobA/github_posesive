@@ -12,15 +12,15 @@ import de.hdodenhof.circleimageview.CircleImageView
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var profile: CircleImageView
-    private lateinit var logistik: TextView
+//    private lateinit var logistik: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         profile = findViewById<CircleImageView>(R.id.Fprofil)
-        logistik = findViewById<TextView>(R.id.tv_logistik2)
+//      logistik = findViewById<TextView>(R.id.tv_logistik2)
         profile.setOnClickListener(this)
-        logistik.setOnClickListener(this)
+//        logistik.setOnClickListener(this)
 
     }
 
@@ -31,10 +31,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intentb)
             }
 
-            R.id.tv_logistik2 -> {
-                val intentb = Intent(this@HomeActivity, LogistikBarangActivity::class.java)
-                startActivity(intentb)
-            }
+//            R.id.tv_logistik2 -> {
+//                val intentb = Intent(this@HomeActivity, LogistikBarangActivity::class.java)
+//                startActivity(intentb)
+//            }
         }
     }
 }

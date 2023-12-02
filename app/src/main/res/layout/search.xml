@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,16 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/rounded_shape_edittext"
         >
+
         <EditText
             android:id="@+id/et_cari"
             android:layout_width="340dp"
             android:layout_height="40dp"
-            android:paddingStart="10dp"
             android:autofillHints="name"
+            android:background="@drawable/rounded_shape_edittext"
+            android:paddingStart="10dp"
             android:text="Pencarian"
             android:textSize="15sp"
-            android:background="@drawable/rounded_shape_edittext"
-            />
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:layout_width="wrap_content"

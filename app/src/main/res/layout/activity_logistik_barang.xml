@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/logictic"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textColor="@color/green"/>
 
             <TextView
@@ -33,16 +33,16 @@
                 android:paddingEnd="5dp"
                 android:layout_gravity="center"
                 android:text="@string/form"
-                android:textSize="18sp"
+                android:textSize="15sp"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
 
         </LinearLayout>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="vertical">
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scrollbars="vertical">-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="20dp"
+                    android:paddingTop="10dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:orientation="vertical">
@@ -66,13 +66,13 @@
                     <EditText
                         android:id="@+id/EditTextName"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:paddingStart="10dp"
+                        android:layout_height="35dp"
+                        android:paddingStart="15dp"
                         android:layout_marginTop="10dp"
                         android:autofillHints="name"
                         android:text="@string/name"
-                        android:textSize="15sp"
-                        android:background="@drawable/rounded_shape_edittext"/>
+                        android:textSize="13sp"
+                        android:background="@drawable/kolomlogistik"/>
 
                 </LinearLayout>
 
@@ -93,13 +93,13 @@
                     <EditText
                         android:id="@+id/EditTextNumberPhone"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
                         android:autofillHints="name"
+                        android:background="@drawable/kolomlogistik"
+                        android:paddingStart="10dp"
                         android:text="@string/phonenum"
-                        android:textSize="15sp"
-                        android:background="@drawable/rounded_shape_edittext"/>
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -121,15 +121,15 @@
                     <EditText
                         android:id="@+id/EditTextDate"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
+                        android:layout_height="35dp"
                         android:layout_marginTop="10dp"
                         android:autofillHints="name"
+                        android:background="@drawable/kolomlogistik"
+                        android:drawableEnd="@drawable/calendar_yellow"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
                         android:text="@string/date"
-                        android:textSize="15sp"
-                        android:background="@drawable/rounded_shape_edittext"
-                        android:drawableEnd="@drawable/calendar_yellow"/>
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
@@ -158,15 +158,15 @@
 
                             <EditText
                                 android:id="@+id/EditTextLocation"
-                                android:layout_width="190dp"
-                                android:layout_height="40dp"
-                                android:paddingStart="10dp"
+                                android:layout_width="220dp"
+                                android:layout_height="35dp"
+                                android:paddingStart="15dp"
                                 android:paddingEnd="10dp"
                                 android:layout_marginTop="10dp"
                                 android:autofillHints="name"
                                 android:text="@string/address"
-                                android:textSize="15sp"
-                                android:background="@drawable/rounded_shape_edittext"
+                                android:textSize="13sp"
+                                android:background="@drawable/kolomlogistik"
                                 android:drawableEnd="@drawable/location_yellow_1"/>
 
                         </LinearLayout>
@@ -188,13 +188,13 @@
                             <EditText
                                 android:id="@+id/EditTextWard"
                                 android:layout_width="140dp"
-                                android:layout_height="40dp"
+                                android:layout_height="35dp"
                                 android:paddingStart="20dp"
                                 android:paddingEnd="10dp"
                                 android:layout_marginTop="10dp"
                                 android:autofillHints="date"
-                                android:textSize="15sp"
-                                android:background="@drawable/rounded_shape_edittext" />
+                                android:textSize="13sp"
+                                android:background="@drawable/kolomlogistik" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -225,12 +225,14 @@
 
                             <CheckBox android:id="@+id/CheckBoxPupuk"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/pupuk" />
+                                android:layout_height="20dp"
+                                android:text="@string/pupuk"
+                                android:layout_marginTop="10dp"/>
 
                             <CheckBox android:id="@+id/CheckBoxBibit"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
                                 android:text="@string/bibit"/>
 
                         </LinearLayout>
@@ -246,13 +248,15 @@
 
                             <CheckBox android:id="@+id/CheckBoxObatTanaman"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/obat_tanaman" />
+                                android:layout_height="20dp"
+                                android:text="@string/obat_tanaman"
+                                android:layout_marginTop="10dp"/>
 
                             <CheckBox android:id="@+id/CheckBoxAlatPertanian"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/alat_pertanian"/>
+                                android:layout_height="20dp"
+                                android:text="@string/alat_pertanian"
+                                android:layout_marginTop="5dp"/>
 
 
                         </LinearLayout>
@@ -262,7 +266,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
+                    android:paddingTop="0dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:orientation="vertical">
@@ -278,15 +282,15 @@
 
                             <EditText
                                 android:id="@+id/EditTextQuantity"
-                                android:layout_width="240dp"
-                                android:layout_height="40dp"
-                                android:paddingStart="10dp"
+                                android:layout_width="270dp"
+                                android:layout_height="35dp"
+                                android:paddingStart="15dp"
                                 android:paddingEnd="10dp"
                                 android:layout_marginTop="10dp"
                                 android:autofillHints="name"
                                 android:text="@string/fill"
-                                android:textSize="15sp"
-                                android:background="@drawable/rounded_shape_edittext"/>
+                                android:textSize="13sp"
+                                android:background="@drawable/kolomlogistik"/>
 
                         </LinearLayout>
 
@@ -310,9 +314,9 @@
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="35dp"
                                     android:text="@string/quantity"
-                                    android:textSize="15sp"
+                                    android:textSize="13sp"
                                     android:gravity="center"/>
                             </androidx.cardview.widget.CardView>
 
@@ -337,13 +341,13 @@
                     <EditText
                         android:id="@+id/EditTextReason"
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="70dp"
                         android:paddingStart="10dp"
                         android:layout_marginTop="10dp"
                         android:autofillHints="name"
                         android:text="@string/reason_text"
                         android:textSize="15sp"
-                        android:background="@drawable/rounded_shape_edittext"/>
+                        android:background="@drawable/kolomlogistik"/>
 
                 </LinearLayout>
 
@@ -358,23 +362,62 @@
 
                     <Button
                         android:id="@+id/Cancel"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
                         android:text="@string/cancel"
-                        android:textSize="15sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="10sp"
                         android:backgroundTint="@color/green"/>
 
                     <Button
                         android:id="@+id/Send"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
                         android:text="@string/send"
-                        android:textSize="15sp"
+                        android:textSize="10sp"
+                        android:layout_marginStart="20dp"
                         android:backgroundTint="@color/green"/>
 
                 </LinearLayout>
             </LinearLayout>
-        </ScrollView>
+<!--        </ScrollView>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="0dp"
+        android:layout_marginTop="690dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ikonhome"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonlogistik"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonkomunitas"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonperson"/>
+
     </LinearLayout>
 </RelativeLayout>

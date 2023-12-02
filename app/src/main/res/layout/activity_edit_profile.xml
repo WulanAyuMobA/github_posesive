@@ -29,7 +29,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/back_arrow"
-                    android:contentDescription="BackButton" />
+                    android:contentDescription="BackButton"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -43,15 +44,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_launcher_background"
+                        android:src="@drawable/imas"
                         app:shapeAppearanceOverlay="@style/circular"/>
 
                     <ImageButton
                         android:id="@+id/ImageChoose"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
                         android:background="@drawable/camera"
-                        android:layout_gravity="bottom"/>
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -109,9 +111,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -161,9 +164,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -213,9 +217,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -265,9 +270,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -317,9 +323,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -369,9 +376,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:layout_marginStart="10dp"
-                        android:gravity="end"
                         android:background="@drawable/edit"
-                        android:contentDescription="EditButton" />
+                        android:contentDescription="EditButton"
+                        android:gravity="end"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
