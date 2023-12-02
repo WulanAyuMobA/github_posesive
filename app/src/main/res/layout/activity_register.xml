@@ -1,9 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D6D6D6"
     tools:context=".register">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:orientation="vertical"
+            android:background="@drawable/retangleregiser">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hallo"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Izinkan kami membantu anda untuk memulai"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="@string/name"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="No. Telepon"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Alamat"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Kota"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Kelurahan"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Kecamatan"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="submit foto KTP"
+                android:layout_marginTop="25dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/unggah"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:paddingStart="40dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Unggah foto"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/submitfoto"/>
+        </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Selanjutnya"
+            android:backgroundTint="@color/green"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah memiliki akun?"
+                android:layout_marginStart="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="145dp"
+                android:textColor="#085B45"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

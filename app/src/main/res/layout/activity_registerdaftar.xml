@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6"
+    tools:context=".registerdaftar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:paddingTop="100dp"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/retangleregiser">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/back_arrow"
+                    android:background="@drawable/buletanbackarrow"
+                    android:contentDescription="BackButton"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hallo"
+                        android:layout_marginTop="50dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selesaikan pendaftaran Anda"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp">
+
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="E-mail"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingStart="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/kolomlogistik"
+                android:text="Kata sandi"
+                android:textSize="13sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mata"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="250dp"/>
+
+        </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingStart="15dp"
+                        android:autofillHints="name"
+                        android:background="@drawable/kolomlogistik"
+                        android:text="Ulangi kata sandi"
+                        android:textSize="13sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mata"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="250dp"/>
+
+                </FrameLayout>
+
+                <CheckBox
+                    android:id="@+id/CheckBoxObatTanaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="10dp"
+                    android:text="Menyetujui Ketentuan"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Daftar"
+            android:backgroundTint="@color/green"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah memiliki akun?"
+                android:layout_marginStart="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="145dp"
+                android:textColor="#085B45"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

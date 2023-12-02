@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:paddingTop="50dp"
         android:orientation="vertical">
 
@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:background="@drawable/camera"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -71,12 +71,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingTop="20dp"
+
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:paddingTop="30dp"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="10dp">
 
@@ -131,6 +133,7 @@
                 android:layout_height="30dp"
                 android:paddingTop="30dp"
                 app:cardBackgroundColor="@color/gray"
+                android:layout_marginTop="10dp"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -183,6 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:paddingTop="30dp"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="10dp">
 
@@ -236,6 +240,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:paddingTop="30dp"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="10dp">
 
@@ -289,6 +294,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:paddingTop="30dp"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="10dp">
 
@@ -341,6 +347,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
+                android:layout_marginTop="10dp"
                 android:paddingTop="30dp"
                 app:cardBackgroundColor="@color/gray"
                 app:cardCornerRadius="10dp">
@@ -389,6 +396,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:paddingTop="20dp"
             android:orientation="horizontal">
 
@@ -439,12 +447,13 @@
             <Button
                 android:id="@+id/EditProfileButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="50dp"
-                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/green"
                 android:text="@string/confirmation"
-                android:backgroundTint="@color/green"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 

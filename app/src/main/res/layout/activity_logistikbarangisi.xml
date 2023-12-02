@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logistikbarangisi">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CAC9C9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logictic"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_gravity="center"
+                android:text="@string/form"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:scrollbars="vertical">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/darkyellow"/>
+
+                <EditText
+                    android:id="@+id/EditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/kolomlogistik"
+                    android:paddingStart="15dp"
+                    android:text="@string/name"
+                    android:textSize="13sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phonenum"
+                    android:textColor="@color/darkyellow"/>
+
+                <EditText
+                    android:id="@+id/EditTextNumberPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/kolomlogistik"
+                    android:paddingStart="10dp"
+                    android:text="@string/phonenum"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/darkyellow"/>
+
+
+                <EditText
+                    android:id="@+id/EditTextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/kolomlogistik"
+                    android:drawableEnd="@drawable/calendar_yellow"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/date"
+                    android:textSize="13sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:textColor="@color/darkyellow"/>
+
+                        <EditText
+                            android:id="@+id/EditTextLocation"
+                            android:layout_width="220dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/kolomlogistik"
+                            android:drawableEnd="@drawable/location_yellow_1"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="10dp"
+                            android:text="@string/address"
+                            android:textSize="13sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ward"
+                            android:layout_marginEnd="75dp"
+                            android:textColor="@color/darkyellow" />
+
+                        <EditText
+                            android:id="@+id/EditTextWard"
+                            android:layout_width="140dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:autofillHints="date"
+                            android:background="@drawable/kolomlogistik"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:textSize="13sp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/request"
+                            android:textColor="@color/darkyellow"/>
+
+                        <CheckBox
+                            android:id="@+id/CheckBoxPupuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/pupuk"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBoxBibit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/bibit"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="100dp"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <CheckBox
+                            android:id="@+id/CheckBoxObatTanaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/obat_tanaman"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBoxAlatPertanian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/alat_pertanian"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/EditTextQuantity"
+                            android:layout_width="270dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/kolomlogistik"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="10dp"
+                            android:text="@string/fill"
+                            android:textSize="13sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CardQuantity"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/gray">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="@string/quantity"
+                                android:textSize="13sp"
+                                android:gravity="center"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reason"
+                    android:textColor="@color/darkyellow"/>
+
+                <EditText
+                    android:id="@+id/EditTextReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints="name"
+                    android:text="@string/reason_text"
+                    android:textSize="15sp"
+                    android:background="@drawable/kolomlogistik"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/Cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/green"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/cancel"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/Send"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/green"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/send"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--        </ScrollView>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CAC9C9"
+        android:paddingTop="0dp"
+        android:layout_marginTop="690dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ikonhome"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonlogistik"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonkomunitas"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ikonperson"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="200dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:outlineAmbientShadowColor="@color/black"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:id="@+id/atas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proses Pengajuan Berhasil"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#07362A"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/longline"
+                    android:layout_marginTop="70dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terimakasih sudah mengisi formulis request barang, silakan ditunggu barang yang Anda request tiba!"
+                    android:textSize="15sp"
+                    android:textColor="#07362A"
+                    android:layout_marginTop="85dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="60dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Konfirmasi"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>
