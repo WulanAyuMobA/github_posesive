@@ -11,41 +11,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="355dp"
-        android:paddingStart="50dp"
-        android:paddingEnd="50dp">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/selamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Selamat Datang di"
+                android:paddingTop="20dp"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minilogo"
-                android:layout_marginStart="10dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/minilogo" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/retanglelogin"
             android:orientation="vertical"
-            android:layout_marginTop="30dp"
             android:paddingStart="20dp"
-            android:paddingEnd="20dp"
             android:paddingTop="30dp"
-            android:background="@drawable/retanglelogin">
+            android:paddingEnd="20dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -58,26 +68,28 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/kolominput"
                     android:hint="Masukkan email Anda"
+                    android:textColorHint="#9E9D9D"
                     android:paddingStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="10sp"
                     tools:ignore="TouchTargetSizeCheck" />
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Masukkan email Anda"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"
-                android:textSize="15sp"
-                android:paddingStart="15dp"
-                android:background="@drawable/kolominput"
-                />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/kolominput"
+                    android:hint="Masukkan password Anda"
+                    android:textColorHint="#FF9E9D9D"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
+                    android:layout_marginLeft="135dp"
                     android:layout_marginTop="5dp"
                     android:text="Lupa password?"
                     android:textColor="#085B45"
@@ -88,10 +100,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="9dp"
                     android:src="@drawable/line" />
@@ -99,24 +112,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:layout_marginStart="7dp"
-                    android:textSize="12sp"
                     android:layout_marginEnd="7dp"
                     android:text="Atau masuk dengan"
-                    android:textColor="#085B45" />
+                    android:textColor="#085B45"
+                    android:textSize="10sp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="9dp"
-                    android:src="@drawable/line"/>
+                    android:src="@drawable/line" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -135,11 +149,11 @@
                 android:id="@+id/btn_logindisini"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
                 android:backgroundTint="#085B45"
                 android:text="Login"
                 android:textColor="@color/white"
-                android:textColorHint="#085B45" />
+                android:textColorHint="#085B45"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -157,201 +171,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
                     android:text="Daftar sekarang!"
                     android:textColor="#085B45"
-                    android:layout_marginStart="5dp"
-                    android:textStyle="bold"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
 
     </LinearLayout>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="vertical"-->
-<!--        android:paddingTop="10dp"-->
-<!--        android:layout_marginTop="300dp"-->
-<!--        android:layout_marginStart="30dp"-->
-<!--        android:layout_marginEnd="30dp">-->
-
-<!--    <FrameLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="25dp">-->
-<!--       <LinearLayout-->
-<!--       android:layout_width="match_parent"-->
-<!--       android:layout_height="match_parent"-->
-<!--       android:orientation="horizontal" >-->
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:text="Selamat Datang di"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="25sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:layout_editor_absoluteX="167dp"-->
-<!--        tools:layout_editor_absoluteY="392dp" />-->
-<!--   </LinearLayout>-->
-
-<!--   <LinearLayout-->
-<!--       android:layout_width="match_parent"-->
-<!--       android:layout_height="match_parent">-->
-
-<!--       <ImageView-->
-<!--           android:layout_width="match_parent"-->
-<!--           android:layout_height="wrap_content"-->
-<!--           android:src="@drawable/minilogo"-->
-<!--           android:layout_marginStart="220dp"/>-->
-
-<!--   </LinearLayout>-->
-<!--    </FrameLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="@drawable/retanglelogin"-->
-<!--            android:orientation="vertical"-->
-<!--            android:paddingStart="25dp"-->
-<!--            android:paddingTop="50dp"-->
-<!--            android:paddingEnd="25dp">-->
-
-<!--            <EditText-->
-<!--                android:id="@+id/email"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@drawable/kolominput"-->
-<!--                android:hint="Masukkan email Anda"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingTop="10dp"-->
-<!--                android:paddingBottom="10dp"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textColorHint="#6C6B6B"-->
-<!--                android:textSize="15dp"-->
-<!--                tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />-->
-
-<!--            <EditText-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:background="@drawable/kolominput"-->
-<!--                android:hint="Masukkan kata sandi Anda"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingTop="10dp"-->
-<!--                android:paddingBottom="10dp"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textColorHint="#6C6B6B"-->
-<!--                android:textSize="15dp"-->
-<!--                tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:paddingStart="174dp"-->
-<!--                android:text="Lupa password?"-->
-<!--                android:textColor="#085B45"-->
-<!--                android:textSize="10sp" />-->
-
-<!--            <FrameLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:paddingEnd="200dp"-->
-<!--                        android:src="@drawable/line" />-->
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:paddingStart="65dp">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:text="Atau masuk dengan"-->
-<!--                        android:textColor="#085B45" />-->
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:paddingStart="200dp"-->
-<!--                        android:src="@drawable/line" />-->
-<!--                </LinearLayout>-->
-
-<!--            </FrameLayout>-->
-
-<!--            <FrameLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:paddingTop="10dp">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:paddingEnd="40dp"-->
-<!--                    android:src="@drawable/ikongiigke" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:paddingStart="40dp"-->
-<!--                    android:src="@drawable/ikonfb" />-->
-
-
-<!--            </FrameLayout>-->
-
-<!--            <FrameLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:paddingTop="10dp">-->
-
-<!--                <Button-->
-<!--                    android:id="@+id/btn_logindisini"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:backgroundTint="#085B45"-->
-<!--                    android:text="Login"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textColorHint="#085B45" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:paddingTop="48dp"-->
-<!--                    android:text="Belum punya akun?"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="10sp" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:paddingStart="90dp"-->
-<!--                    android:paddingTop="48dp"-->
-<!--                    android:text="Daftar sekarang!"-->
-<!--                    android:textColor="#085B45"-->
-<!--                    android:textSize="10sp" />-->
-<!--            </FrameLayout>-->
-
-<!--        </LinearLayout>-->
-
-<!--    </LinearLayout>-->
-
-
-
 </RelativeLayout>
+

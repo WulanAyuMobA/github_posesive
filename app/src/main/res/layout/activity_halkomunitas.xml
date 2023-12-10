@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent"
+    tools:context=".halkomunitas">
 
     <LinearLayout
         android:id="@+id/isi"
@@ -57,7 +58,7 @@
                 android:hint="Pencarian"
                 android:paddingStart="20dp"
                 android:paddingTop="5dp"
-                android:paddingRight="170dp"
+                android:paddingRight="130dp"
                 android:paddingBottom="5dp"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -65,14 +66,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:paddingStart="235dp"
+                android:paddingStart="180dp"
                 android:src="@drawable/cari" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Posting"
-                android:layout_marginStart="280dp"
+                android:layout_marginStart="230dp"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
                 android:paddingTop="6dp"
@@ -287,7 +288,7 @@
 
     </LinearLayout>
 
-<!--    navbar-->
+    <!--    navbar-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -321,170 +322,170 @@
 
     </LinearLayout>
 
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/rlkomunitas"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_margin="10dp"-->
-<!--        >-->
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/rlkomunitas"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        >-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvkom"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Komunitas"-->
-<!--            android:textColor="@color/green"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textSize="25dp"-->
-<!--            android:layout_marginLeft="15dp"-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvkom"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Komunitas"-->
+    <!--            android:textColor="@color/green"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textSize="25dp"-->
+    <!--            android:layout_marginLeft="15dp"-->
 
-<!--            />-->
-<!--        <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Lihat Semua"-->
-<!--        android:textColor="@color/darkyellow"-->
-<!--        android:textSize="15dp"-->
-<!--        android:layout_marginLeft="150dp"-->
-<!--            android:layout_marginTop="6dp"-->
-<!--        android:layout_toEndOf="@id/tvkom"-->
-<!--        />-->
+    <!--            />-->
+    <!--        <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Lihat Semua"-->
+    <!--        android:textColor="@color/darkyellow"-->
+    <!--        android:textSize="15dp"-->
+    <!--        android:layout_marginLeft="150dp"-->
+    <!--            android:layout_marginTop="6dp"-->
+    <!--        android:layout_toEndOf="@id/tvkom"-->
+    <!--        />-->
 
-<!--    </RelativeLayout>-->
+    <!--    </RelativeLayout>-->
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="360dp"-->
-<!--        android:layout_height="167dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/rlkomunitas"-->
-<!--        app:cardCornerRadius="16dp"-->
-<!--        android:outlineAmbientShadowColor="@color/black"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        >-->
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/rl_kom"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="10dp"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-<!--        <de.hdodenhof.circleimageview.CircleImageView-->
-<!--            android:id="@+id/fotop"-->
-<!--            android:layout_width="40dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:src="@drawable/fotoimas"-->
-<!--            />-->
-<!--        <TextView-->
-<!--            android:id="@+id/tv_nama"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Ratna"-->
-<!--            android:textColor="@color/green"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textSize="20sp"-->
-<!--            android:layout_toEndOf="@id/fotop"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            />-->
-<!--            <TextView-->
-<!--            android:id="@+id/tv_hari"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="3 HariLalu"-->
-<!--                android:layout_marginStart="150dp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="16sp"-->
-<!--            android:layout_toEndOf="@id/tv_nama"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            />-->
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="360dp"-->
+    <!--        android:layout_height="167dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rlkomunitas"-->
+    <!--        app:cardCornerRadius="16dp"-->
+    <!--        android:outlineAmbientShadowColor="@color/black"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        >-->
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl_kom"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/fotop"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:src="@drawable/fotoimas"-->
+    <!--            />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_nama"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Ratna"-->
+    <!--            android:textColor="@color/green"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:layout_toEndOf="@id/fotop"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            />-->
+    <!--            <TextView-->
+    <!--            android:id="@+id/tv_hari"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="3 HariLalu"-->
+    <!--                android:layout_marginStart="150dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:layout_toEndOf="@id/tv_nama"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_isi"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Musim ini sangat cocok untuk menannam sayur kol sayabaru mendaptkan hasil panen sayur kol yang lumayan"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textAlignment="inherit"-->
-<!--                android:textSize="16sp"-->
-<!--                android:layout_below="@id/fotop"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                />-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_isi"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Musim ini sangat cocok untuk menannam sayur kol sayabaru mendaptkan hasil panen sayur kol yang lumayan"-->
+    <!--                android:textColor="@color/green"-->
+    <!--                android:textAlignment="inherit"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_below="@id/fotop"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                />-->
 
-<!--        </RelativeLayout>-->
+    <!--        </RelativeLayout>-->
 
-<!--        <RelativeLayout-->
+    <!--        <RelativeLayout-->
 
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="10dp"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-<!--            <de.hdodenhof.circleimageview.CircleImageView-->
-<!--                android:layout_width="40dp"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:src="@drawable/fotoimas"-->
-<!--                />-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Ratna"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textStyle="bold"-->
-<!--                android:textSize="20sp"-->
-<!--                android:layout_toEndOf="@id/fotop"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                />-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="3 HariLalu"-->
-<!--                android:layout_marginStart="150dp"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="16sp"-->
-<!--                android:layout_toEndOf="@id/tv_nama"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                />-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+    <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                android:layout_width="40dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:src="@drawable/fotoimas"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Ratna"-->
+    <!--                android:textColor="@color/green"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:layout_toEndOf="@id/fotop"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="3 HariLalu"-->
+    <!--                android:layout_marginStart="150dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_toEndOf="@id/tv_nama"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                />-->
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Musim ini sangat cocok untuk menannam sayur kol sayabaru mendaptkan hasil panen sayur kol yang lumayan"-->
-<!--                android:textColor="@color/green"-->
-<!--                android:textAlignment="inherit"-->
-<!--                android:textSize="16sp"-->
-<!--                android:layout_below="@id/fotop"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Musim ini sangat cocok untuk menannam sayur kol sayabaru mendaptkan hasil panen sayur kol yang lumayan"-->
+    <!--                android:textColor="@color/green"-->
+    <!--                android:textAlignment="inherit"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:layout_below="@id/fotop"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                />-->
 
-<!--        </RelativeLayout>-->
-<!--    </androidx.cardview.widget.CardView>-->
-<!--<LinearLayout-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:paddingTop="300dp">-->
+    <!--        </RelativeLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+    <!--<LinearLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:paddingTop="300dp">-->
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical">-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
 
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="komentar"></TextView>-->
-<!--    </LinearLayout>-->
-<!--</LinearLayout>-->
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="komentar"></TextView>-->
+    <!--    </LinearLayout>-->
+    <!--</LinearLayout>-->
 </RelativeLayout>

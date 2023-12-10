@@ -5,10 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LogistikBarangActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -23,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/logictic"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textColor="@color/green"/>
 
             <TextView
@@ -33,7 +37,7 @@
                 android:paddingEnd="5dp"
                 android:layout_gravity="center"
                 android:text="@string/form"
-                android:textSize="15sp"
+                android:textSize="10sp"
                 android:textColor="@color/black"
                 android:textAlignment="center"/>
 
@@ -52,7 +56,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
+                    android:paddingTop="0dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:orientation="vertical">
@@ -60,7 +64,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/name"
+                        android:text="Nama lengkap"
                         android:textColor="@color/darkyellow"/>
 
                     <EditText
@@ -68,10 +72,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_marginTop="10dp"
-                        android:autofillHints="name"
+                        android:hint="Nama lengkap"
+                        android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
                         android:paddingStart="15dp"
-                        android:text="@string/name"
                         android:textSize="13sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
@@ -88,7 +92,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/phonenum"
+                        android:text="No. Telepon"
                         android:textColor="@color/darkyellow"/>
 
                     <EditText
@@ -96,10 +100,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_marginTop="15dp"
-                        android:autofillHints="name"
+                        android:hint="No.Telepon"
+                        android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
                         android:paddingStart="10dp"
-                        android:text="@string/phonenum"
                         android:textSize="12sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
@@ -116,7 +120,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/date"
+                        android:text="Tanggal"
                         android:textColor="@color/darkyellow"/>
 
 
@@ -125,12 +129,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:layout_marginTop="10dp"
-                        android:autofillHints="name"
+                        android:hint="Tanggal"
+                        android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
                         android:drawableEnd="@drawable/calendar_yellow"
                         android:paddingStart="15dp"
                         android:paddingEnd="10dp"
-                        android:text="@string/date"
                         android:textSize="13sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
@@ -156,7 +160,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/address"
+                                android:text="Alamat"
                                 android:textColor="@color/darkyellow"/>
 
                             <EditText
@@ -164,12 +168,12 @@
                                 android:layout_width="220dp"
                                 android:layout_height="35dp"
                                 android:layout_marginTop="10dp"
-                                android:autofillHints="name"
+                                android:hint="Alamat:"
+                                android:textColorHint="#9E9D9D"
                                 android:background="@drawable/kolomlogistik"
                                 android:drawableEnd="@drawable/location_yellow_1"
                                 android:paddingStart="15dp"
                                 android:paddingEnd="10dp"
-                                android:text="@string/address"
                                 android:textSize="13sp"
                                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -267,6 +271,7 @@
                                 android:id="@+id/CheckBoxAlatPertanian"
                                 android:layout_width="wrap_content"
                                 android:layout_height="20dp"
+                                android:paddingEnd="2dp"
                                 android:layout_marginTop="5dp"
                                 android:text="@string/alat_pertanian"
                                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
@@ -295,14 +300,13 @@
 
                             <EditText
                                 android:id="@+id/EditTextQuantity"
-                                android:layout_width="270dp"
+                                android:layout_width="220dp"
                                 android:layout_height="35dp"
                                 android:layout_marginTop="10dp"
-                                android:autofillHints="name"
+                                android:hint="Isi disini"
                                 android:background="@drawable/kolomlogistik"
                                 android:paddingStart="15dp"
                                 android:paddingEnd="10dp"
-                                android:text="@string/fill"
                                 android:textSize="13sp"
                                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -319,7 +323,7 @@
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/CardQuantity"
                                 android:layout_width="80dp"
-                                android:layout_height="40dp"
+                                android:layout_height="35dp"
                                 android:paddingStart="10dp"
                                 android:paddingEnd="10dp"
                                 android:layout_marginTop="10dp"
@@ -328,7 +332,8 @@
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="35dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="10dp"
                                     android:text="@string/quantity"
                                     android:textSize="13sp"
                                     android:gravity="center"/>
@@ -358,8 +363,7 @@
                         android:layout_height="70dp"
                         android:paddingStart="10dp"
                         android:layout_marginTop="5dp"
-                        android:autofillHints="name"
-                        android:text="@string/reason_text"
+                        android:hint="Alasan"
                         android:textSize="15sp"
                         android:background="@drawable/kolomlogistik"/>
 
@@ -374,16 +378,6 @@
                     android:orientation="horizontal"
                     android:gravity="center">
 
-                    <Button
-                        android:id="@+id/Cancel"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:backgroundTint="@color/green"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:text="@string/cancel"
-                        android:textSize="10sp"
-                        tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/Send"
@@ -402,38 +396,42 @@
             </LinearLayout>
 <!--        </ScrollView>-->
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        android:paddingTop="0dp"
-        android:layout_marginTop="690dp"
-        android:gravity="center"
-        >
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ikonhome"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="660dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="60dp"
-            android:src="@drawable/ikonlogistik"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ikonhome" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="60dp"
-            android:src="@drawable/ikonkomunitas"/>
+            <ImageView
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="60dp"
-            android:src="@drawable/ikonperson"/>
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/ikonlogistik" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/komunitas2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/ikonkomunitas" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/ikonperson" />
+
+        </LinearLayout>
+    </FrameLayout>
 </RelativeLayout>
