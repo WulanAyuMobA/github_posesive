@@ -16,9 +16,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="2dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -63,7 +62,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/email"
+                    android:id="@+id/et_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/kolominput"
@@ -75,10 +74,12 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
+                    android:id="@+id/et_pass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/kolominput"
+                    android:inputType="textPassword"
                     android:hint="Masukkan password Anda"
                     android:textColorHint="#FF9E9D9D"
                     android:paddingStart="15dp"
@@ -93,7 +94,8 @@
                     android:layout_marginTop="5dp"
                     android:text="Lupa password?"
                     android:textColor="#085B45"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -169,6 +171,7 @@
                     android:textSize="10sp" />
 
                 <TextView
+                    android:id="@+id/register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"

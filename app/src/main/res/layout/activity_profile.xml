@@ -36,7 +36,6 @@
                 android:layout_height="530dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="20dp"
                 app:cardBackgroundColor="@color/green"
                 app:cardCornerRadius="10dp">
 
@@ -89,7 +88,7 @@
                                     android:id="@+id/EmailUser"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Imas@gmail.com"
+                                    android:text="imas@gmail.com"
                                     android:textColor="@color/black"
                                     android:textSize="10sp" />
 
@@ -377,7 +376,7 @@
                                             android:textSize="13sp"
                                             android:layout_weight="1"
                                             android:gravity="end"
-                                            android:text="Ima******"
+                                            android:text="ima***"
                                             android:textColor="@color/black" />
 
                                     </LinearLayout>
@@ -442,9 +441,9 @@
         android:orientation="horizontal"
         android:background="@color/white"
         android:paddingTop="15dp"
-        android:layout_marginTop="673dp"
-        android:gravity="center"
-        >
+        android:layout_marginTop="650dp"
+        android:paddingBottom="15dp"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="40dp"
@@ -460,10 +459,12 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:scaleType="fitXY"
             android:layout_marginStart="60dp"
             android:src="@drawable/ikonkomunitas"/>
 
         <ImageView
+            android:id="@+id/profil"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="60dp"

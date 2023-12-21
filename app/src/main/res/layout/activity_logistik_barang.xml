@@ -68,10 +68,9 @@
                         android:textColor="@color/darkyellow"/>
 
                     <EditText
-                        android:id="@+id/EditTextName"
+                        android:id="@+id/namalengkap"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:layout_marginTop="10dp"
                         android:hint="Nama lengkap"
                         android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
@@ -96,10 +95,9 @@
                         android:textColor="@color/darkyellow"/>
 
                     <EditText
-                        android:id="@+id/EditTextNumberPhone"
+                        android:id="@+id/notelepon"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:layout_marginTop="15dp"
                         android:hint="No.Telepon"
                         android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
@@ -125,10 +123,10 @@
 
 
                     <EditText
-                        android:id="@+id/EditTextDate"
+                        android:id="@+id/tanggal"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:layout_marginTop="10dp"
+                        android:inputType="datetime"
                         android:hint="Tanggal"
                         android:textColorHint="#9E9D9D"
                         android:background="@drawable/kolomlogistik"
@@ -164,10 +162,9 @@
                                 android:textColor="@color/darkyellow"/>
 
                             <EditText
-                                android:id="@+id/EditTextLocation"
-                                android:layout_width="220dp"
+                                android:id="@+id/alamat"
+                                android:layout_width="170dp"
                                 android:layout_height="35dp"
-                                android:layout_marginTop="10dp"
                                 android:hint="Alamat:"
                                 android:textColorHint="#9E9D9D"
                                 android:background="@drawable/kolomlogistik"
@@ -194,10 +191,9 @@
                                 android:textColor="@color/darkyellow" />
 
                             <EditText
-                                android:id="@+id/EditTextWard"
+                                android:id="@+id/kelurahan"
                                 android:layout_width="140dp"
                                 android:layout_height="35dp"
-                                android:layout_marginTop="10dp"
                                 android:autofillHints="date"
                                 android:background="@drawable/kolomlogistik"
                                 android:paddingStart="20dp"
@@ -299,7 +295,7 @@
                             android:orientation="vertical">
 
                             <EditText
-                                android:id="@+id/EditTextQuantity"
+                                android:id="@+id/jumlah"
                                 android:layout_width="220dp"
                                 android:layout_height="35dp"
                                 android:layout_marginTop="10dp"
@@ -330,13 +326,15 @@
                                 app:cardCornerRadius="10dp"
                                 app:cardBackgroundColor="@color/gray">
 
-                                <TextView
+                                <Spinner
+                                    android:id="@+id/spinner"
                                     android:layout_width="match_parent"
                                     android:layout_height="20dp"
                                     android:layout_marginTop="10dp"
-                                    android:text="@string/quantity"
+                                    android:gravity="center"
+                                    android:entries="@array/jumlah"
                                     android:textSize="13sp"
-                                    android:gravity="center"/>
+                                    tools:ignore="TouchTargetSizeCheck" />
                             </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
@@ -358,9 +356,9 @@
                         android:textColor="@color/darkyellow"/>
 
                     <EditText
-                        android:id="@+id/EditTextReason"
+                        android:id="@+id/alasan"
                         android:layout_width="match_parent"
-                        android:layout_height="70dp"
+                        android:layout_height="80dp"
                         android:paddingStart="10dp"
                         android:layout_marginTop="5dp"
                         android:hint="Alasan"
@@ -382,8 +380,9 @@
                     <Button
                         android:id="@+id/Send"
                         android:layout_width="100dp"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
                         android:backgroundTint="@color/green"
                         android:gravity="center"
                         android:paddingTop="5dp"
@@ -423,6 +422,7 @@
                 android:id="@+id/komunitas2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:scaleType="fitXY"
                 android:layout_marginStart="60dp"
                 android:src="@drawable/ikonkomunitas" />
 

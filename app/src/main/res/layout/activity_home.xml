@@ -459,12 +459,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="280dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="665dp"
+        android:layout_marginTop="655dp"
         android:background="@color/white"
         android:gravity="center"
         android:orientation="horizontal">
@@ -472,7 +472,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-
+            android:scaleType="fitXY"
             android:src="@drawable/ikonhome" />
 
         <ImageView
@@ -490,6 +490,7 @@
             android:src="@drawable/ikonkomunitas" />
 
         <ImageView
+            android:id="@+id/profil"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="60dp"
